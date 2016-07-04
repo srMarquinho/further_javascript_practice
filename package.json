@@ -7,13 +7,20 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/gtormiston/further_javascript.git"
+    "type": "git"
   },
-  "author": "",
+  "author": "me",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/gtormiston/further_javascript/issues"
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "sinon": "latest",
+    "grunt": "latest",
+    "grunt-mocha-test": "latest",
+    "grunt-contrib-watch": "latest"
   },
-  "homepage": "https://github.com/gtormiston/further_javascript#readme"
+  "bugs": {
+    "url": "https://github.com/LukeAveil/further_javascript/issues"
+  },
+  "homepage": "https://github.com/LukeAveil/further_javascript#readme"
 }
