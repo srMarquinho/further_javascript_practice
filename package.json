@@ -1,0 +1,30 @@
+{
+  "name": "further_javascript_practice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^2.5.3",
+    "mustache": "^2.2.1",
+    "node": "^0.0.0",
+    "sinon": "^1.17.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srMarquinho/further_javascript_practice.git"
+  },
+  "author": "MA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/srMarquinho/further_javascript_practice/issues"
+  },
+  "homepage": "https://github.com/srMarquinho/further_javascript_practice#readme"
+}
