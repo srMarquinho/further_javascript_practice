@@ -1,0 +1,24 @@
+{
+  "name": "further_javascript",
+  "version": "1.0.0",
+  "description": "week 7 makers project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LukeAveil/further_javascript.git"
+  },
+  "author": "me",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "latest",
+    "chai": "latest",
+    "sinon": "latest"
+  },
+  "bugs": {
+    "url": "https://github.com/LukeAveil/further_javascript/issues"
+  },
+  "homepage": "https://github.com/LukeAveil/further_javascript#readme"
+}
