@@ -15,7 +15,9 @@
   "devDependencies": {
     "mocha": "latest",
     "chai": "latest",
-    "sinon": "latest"
+    "sinon": "latest",
+    "grunt": "latest",
+    "grunt-mocha-test": "latest"
   },
   "bugs": {
     "url": "https://github.com/LukeAveil/further_javascript/issues"
