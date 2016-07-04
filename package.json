@@ -1,0 +1,19 @@
+{
+  "name": "further_javascript",
+  "version": "1.0.0",
+  "description": "Makers week 7 Javascript learning",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gtormiston/further_javascript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gtormiston/further_javascript/issues"
+  },
+  "homepage": "https://github.com/gtormiston/further_javascript#readme"
+}
