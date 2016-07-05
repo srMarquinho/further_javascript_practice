@@ -1,4 +1,4 @@
-// var Mustache = require("mustache");
+var Mustache = require("mustache");
 
 function toDo() {
   this._complete = true;
@@ -21,10 +21,20 @@ toDo.prototype = {
 
 };
 
+
+//////////// MUSTACHE TEST//////////
 // todo = new toDo();
+//
+// var view = {
+//   list: todo.list(),
+//   complete: todo.complete()
+// };
+//
 // todo.add('Breakfast');
-// var output = Mustache.render("{{todo.this_list()}} and {{todo.complete()}}");
+//
+// var output = Mustache.render("{{list}} and {{complete}}", view);
 // console.log(output);
+//////////////////////////////////////
 
 // this exports the constructor toDo for testing
 module.exports = toDo;
