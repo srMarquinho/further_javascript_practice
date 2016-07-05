@@ -1,4 +1,6 @@
-'use strict';
+(function () {
+  'use strict';
+}());
 
 function Task(task) {
   this.task = task;

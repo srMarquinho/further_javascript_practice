@@ -1,4 +1,6 @@
-'use strict';
+(function () {
+  'use strict';
+}());
 
 var Task = require('./task.js');
 
@@ -9,6 +11,6 @@ function List(){
 List.prototype.newTask = function(task){
   var task = new Task(task);
   this.tasks.push(task);
-}
+};
 
 module.exports = List;
