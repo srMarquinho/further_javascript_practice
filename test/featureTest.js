@@ -1,12 +1,11 @@
-var app = require("http-server").createServer();
+var server = require("http-server").createServer();
 var assert = require('assert');
 var Browser = require('zombie');
 
 describe('contact page', function() {
-  before(function() {
-    server = app.listen(3000);
-    browser = new Browser({ site: 'http://localhost:3000' });
-  });
+  server.listen(8000);
+  browser = new Browser({ site: 'http://localhost:8000' });
+
   beforeEach(function(done) {
     browser.visit('/', done);
   });
