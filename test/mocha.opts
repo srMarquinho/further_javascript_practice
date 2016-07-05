@@ -1,2 +1,6 @@
 --reporter spec
 --recursive
+--require lib/index
+--require lib/item
+--require lib/list
+--require lib/printer
