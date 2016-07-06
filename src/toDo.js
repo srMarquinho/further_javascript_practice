@@ -1,8 +1,9 @@
 (function(exports) {
+
   function toDo() {
     this._complete = true;
     this._list = [];
-}
+  }
 
   toDo.prototype = {
 
