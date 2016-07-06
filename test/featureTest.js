@@ -14,13 +14,11 @@ describe('contact page', function() {
     browser.assert.status(200);
   });
 
-  it('dispays a do-do list', function() {
-    browser.assert.text('#list', 'Eat BreakfastBrush Teeth');
-  });
-
-  it('adds a To-do to the list', function() {
-    browser.fill('addTodo', 'Eat Breakfast');
-    browser.pressButton('Add');
-    browser.assert.status(0);
+  it('adds and dispays a do-do list', function() {
+    browser.fill('#text', 'Eat Breakfast');
+    browser.pressButton('#button');
+    browser.fill('#text', 'Brush Teeth');
+    browser.pressButton('#button');
+    browser.assert.text('li', 'Eat Breakfast,falseBrush Teeth,false');
   });
 });

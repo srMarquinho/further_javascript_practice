@@ -16,7 +16,7 @@
     },
 
     add: function(todo) {
-      this._list.push(todo);
+      this._list.push([todo, false]);
     },
   };
 
