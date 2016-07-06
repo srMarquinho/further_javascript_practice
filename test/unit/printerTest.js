@@ -1,7 +1,7 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
 var sinon = require('sinon');
-var printItems = require('../../src/js/printer.js');
+var printItems = require('../../src/js/printer.js').printItems;
 
 
 describe('Printer', function() {

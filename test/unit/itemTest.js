@@ -1,12 +1,9 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var Item = require('../../src/js/item.js');
+var Item = require('../../src/js/item.js').Item;
 
 
 describe('Item', function() {
-  // beforeEach(function() {
-  //   var item = new item('phone grandma');
-  // });
   it('should store a item when constructed', function() {
     var item = new Item('phone grandma');
     expect(item.get()).to.equal('phone grandma');

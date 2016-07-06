@@ -1,7 +1,7 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
 var sinon = require('sinon');
-var List = require('../../src/js/list.js');
+var List = require('../../src/js/list.js').List;
 
 describe('List', function() {
 
@@ -14,7 +14,7 @@ describe('List', function() {
     var todo = new List();
     todo.addItem('phone grandma', Stub);
     todo.addItem('eat chocolate', Stub);
-    expect(todo._list[0]._item).to.equal('phone grandma');
-    expect(todo._list[1]._item).to.equal('eat chocolate');
+    expect(todo.list[0]._item).to.equal('phone grandma');
+    expect(todo.list[1]._item).to.equal('eat chocolate');
   });
 });

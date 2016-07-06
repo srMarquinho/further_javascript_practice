@@ -1,19 +1,23 @@
-var Item = require('./item.js');
-var Printer = require('./printer.js');
+'use strict';
 
-var List = function()  {
-  this._list = [];
-};
+(function(exports) {
 
-List.prototype.addItem = function(item, itemConstructor = Item){
-  this._list.push(createItem(item, itemConstructor));
-  return this._list;
-};
+	var List = function()  {
+	  this.list = [];
+	};
 
-// Helpers //
+	List.prototype.addItem = function(item, itemConstructor = Item){
+	  this.list.push(createItem(item, itemConstructor));
+	  return this.list;
+	};
 
-function createItem(item, itemConstructor) {
-  return new itemConstructor(item);
-}
+	// Helpers //
 
-module.exports = List;
+	function createItem(item, itemConstructor) {
+	  return new itemConstructor(item);
+	}
+
+	exports.List = List;
+
+})(this);
+

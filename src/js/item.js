@@ -1,14 +1,21 @@
-var Item = function(item)  {
-  this._item = item;
-  this._complete = false;
-};
+'use strict';
 
-Item.prototype.get = function() {
-  return this._item
-};
+(function(exports) {
 
-Item.prototype.status = function() {
-  return this._complete;
-}
+	var Item = function(item)  {
+	  this._item = item;
+	  this._complete = false;
+	};
 
-module.exports = Item;
+	Item.prototype.get = function() {
+  	return this._item
+	};
+
+	Item.prototype.status = function() {
+  	return this._complete;
+	}
+
+	exports.Item = Item;
+
+})(this);
+

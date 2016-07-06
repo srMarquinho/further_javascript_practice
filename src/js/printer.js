@@ -1,13 +1,19 @@
 'use strict';
 
-function printItems(array) {
-  var array = array;
-  var print = '';
+(function(exports) {
 
-  for (var i = 0; i < array.length; i++) {
-    var print = print.concat('<li><div>' + array[i]._item + '</div></li>');
-  }
-  return '<ul>' + print + '</ul>';
-};
+	function printItems(array) {
+	  var array = array;
+	  var print = '';
 
-module.exports = printItems;
+	  for (var i = 0; i < array.length; i++) {
+	    var print = print.concat('<li><div>' + array[i]._item + '</div></li>');
+	  }
+	  return '<ul>' + print + '</ul>';
+	};
+
+	exports.printItems = printItems;
+
+})(this);
+
+
