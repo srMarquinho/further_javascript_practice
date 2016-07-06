@@ -17,14 +17,23 @@ describe('home page', function() {
 		browser.visit('/', done);
 	});
 
+
+
+
+
 	it('title attribute is To Do List', function() {
 		assert.equal(browser.text('title'), 'To Do List');
 	});
 
 	it('contains some to dos', function() {
+		browser.fill('task', 'phone grandma');
+	  browser.pressButton('Add to list');
+		assert.include(browser.text('ul'), 'phone grandma');
+
+		browser.fill('task', 'eat chocolate');
+	  browser.pressButton('Add to list');
 		assert.include(browser.text('ul'), 'phone grandma');
 		assert.include(browser.text('ul'), 'eat chocolate');
 	});
 
 });
-
