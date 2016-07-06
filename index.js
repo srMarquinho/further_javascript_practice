@@ -1,9 +1,16 @@
-todo = new toDo();
-todo.add('Eat Breakfast');
-todo.add('Brush Teeth');
+function pageReady() {
 
-var view = {
-  list: todo.list()
-};
+  todo = new toDo();
 
-var output = Mustache.render("<ul>{{#list}}<li>{{.}}</li>{{/list}}</ul>", view);
+  document.getElementById('button').onclick = function () {
+    todo.add(document.getElementById('text').value);
+    console.log(todo.list());
+
+    var view = { list: todo.list() };
+    var output = Mustache.render("<ul>{{#list}}<li>{{.}}</li>{{/list}}</ul>", view);
+    document.getElementById('list').innerHTML = output;
+  };
+
+}
+
+window.onload = pageReady;

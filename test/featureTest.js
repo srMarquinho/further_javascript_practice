@@ -18,4 +18,9 @@ describe('contact page', function() {
     browser.assert.text('#list', 'Eat BreakfastBrush Teeth');
   });
 
+  it('adds a To-do to the list', function() {
+    browser.fill('addTodo', 'Eat Breakfast');
+    browser.pressButton('Add');
+    browser.assert.status(0);
+  });
 });
