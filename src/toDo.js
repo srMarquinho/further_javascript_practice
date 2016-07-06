@@ -20,20 +20,5 @@ toDo.prototype = {
 };
 
 
-//////////// MUSTACHE TEST//////////
-// todo = new toDo();
-//
-// var view = {
-//   list: todo.list(),
-//   complete: todo.complete()
-// };
-//
-// todo.add('Breakfast');
-//
-// var output = Mustache.render("{{list}} and {{complete}}", view);
-//
-// console.log(output);
-//////////////////////////////////////
-
 // this exports the constructor toDo for testing
-module.exports = toDo;
+// module.exports = toDo;

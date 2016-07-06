@@ -15,7 +15,7 @@ describe('contact page', function() {
   });
 
   it('dispays do-do list', function() {
-    browser.assert.text('body', 'Eat Breakfast');
+    browser.assert.text('#list', 'Eat Breakfast');
   });
 
 });
