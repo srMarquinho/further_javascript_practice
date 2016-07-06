@@ -14,8 +14,8 @@ describe('contact page', function() {
     browser.assert.status(200);
   });
 
-  it('dispays do-do list', function() {
-    browser.assert.text('#list', 'Eat Breakfast');
-  });
+  // it('dispays do-do list', function() {
+  //   browser.assert.text('#list', 'Eat Breakfast');
+  // });
 
 });
