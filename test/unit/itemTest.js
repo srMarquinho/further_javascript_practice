@@ -1,6 +1,6 @@
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var Item = require('../lib/item.js');
+var Item = require('../../src/js/item.js');
 
 
 describe('Item', function() {

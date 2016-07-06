@@ -1,6 +1,5 @@
 --reporter spec
 --recursive
---require lib/index
---require lib/item
---require lib/list
---require lib/printer
+--require src/js/item
+--require src/js/list
+--require src/js/printer
