@@ -1,8 +1,8 @@
 (function(exports) {
 
   function ToDo(task) {
-    this._complete = false;
     this._task = task;
+    this._complete = false;
   }
 
   ToDo.prototype = {
