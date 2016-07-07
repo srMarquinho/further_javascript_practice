@@ -1,8 +1,9 @@
 var expect = require('chai').expect;
-var toDo = require('../src/toDo').toDo;
+var ToDo = require('../src/to-do').ToDo;
+var List = require('../src/list').List;
 
 describe('To do List', function() {
-  var todo = new toDo();
+  var todo = new ToDo('Eat Breakfast');
 
   it('list includes Eat Breakfast', function() {
     todo.add('Eat Breakfast');

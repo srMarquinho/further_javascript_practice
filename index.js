@@ -1,6 +1,6 @@
 function pageReady() {
 
-  todo = new toDo();
+  todo = new ToDo();
 
   document.getElementById('button').onclick = function () {
     todo.add(document.getElementById('text').value);
