@@ -11,7 +11,8 @@ window.onload = function() {
 	function addTask(evt){
 		evt.preventDefault();
 		list.addItem(document.getElementById('task-input').value);
-		updateList();
+		updateList()
+		document.getElementById('form').reset();
 	};
 
 };

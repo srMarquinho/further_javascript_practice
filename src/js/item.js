@@ -15,6 +15,14 @@
   	return this._complete;
 	}
 
+	Item.prototype.changeStatus = function() {
+		return this._complete = !this._complete;
+	}
+
+	Item.prototype.printStatus = function() {
+		return this._complete ? 'completed' : 'not completed';
+	}
+
 	exports.Item = Item;
 
 })(this);
