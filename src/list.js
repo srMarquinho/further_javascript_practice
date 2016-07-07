@@ -1,3 +1,5 @@
+var Task = require('../src/task').Task;
+
 (function(exports) {
 
   function List() {
@@ -6,9 +8,9 @@
 
   List.prototype = {
 
-    add: function(todoName) {
-      var todo = new ToDo(todoName);
-      this._list.push(todo);
+    add: function(taskName) {
+      var task = new Task(taskName);
+      this._list.push(task);
     }
   };
 

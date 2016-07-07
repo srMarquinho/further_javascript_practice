@@ -10,15 +10,15 @@ describe('contact page', function() {
     browser.visit('/', done);
   });
 
-  it('has a index page', function() {
+  xit('has a index page', function() {
     browser.assert.status(200);
   });
 
-  it('adds and dispays a do-do list', function() {
-    browser.fill('#text', 'Eat Breakfast');
-    browser.pressButton('#button');
-    browser.fill('#text', 'Brush Teeth');
-    browser.pressButton('#button');
+  xit('adds and dispays a do-do list', function() {
+    browser.fill('#addtask', 'Eat Breakfast');
+    browser.pressButton('#submittask');
+    browser.fill('#addtask', 'Brush Teeth');
+    browser.pressButton('#submittask');
     browser.assert.text('li', 'Eat Breakfast,falseBrush Teeth,false');
   });
 });

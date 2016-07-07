@@ -1,13 +1,13 @@
 function pageReady() {
 
-  todo = new ToDo();
+  list = new List();
 
-  document.getElementById('button').onclick = function () {
-    todo.add(document.getElementById('text').value);
+  document.getElementById('submittask').onclick = function () {
+    list.add(document.getElementById('addtask').value);
 
-    var view = { list: todo.list() };
+    var view = { list: list._list };
     var output = Mustache.render("<ul>{{#list}}<li>{{.}}</li>{{/list}}</ul>", view);
-    document.getElementById('list').innerHTML = output;
+    document.getElementById('listtask').innerHTML = output;
   };
 }
 

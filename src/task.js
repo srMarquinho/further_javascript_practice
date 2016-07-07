@@ -1,16 +1,16 @@
 (function(exports) {
 
-  function ToDo(task) {
-    this._task = task;
+  function Task(taskName) {
+    this._taskName = taskName;
     this._complete = false;
   }
 
-  ToDo.prototype = {
+  Task.prototype = {
 
     complete: function() {
       this._complete = true;
     },
   };
 
-  exports.ToDo = ToDo;
+  exports.Task = Task;
 })(this);
