@@ -17,10 +17,6 @@ describe('home page', function() {
 		browser.visit('/', done);
 	});
 
-
-
-
-
 	it('title attribute is To Do List', function() {
 		assert.equal(browser.text('title'), 'To Do List');
 	});

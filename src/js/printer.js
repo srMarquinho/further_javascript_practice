@@ -1,19 +1,20 @@
-'use strict';
-
 (function(exports) {
 
-	function printItems(array) {
-	  var array = array;
+	function printItems(arrayList) {
+	  var array = arrayList;
 	  var print = '';
 
 	  for (var i = 0; i < array.length; i++) {
-	    var print = print.concat('<li><div><input type="checkbox"> ' + array[i]._item + ' - ' + array[i].printStatus() + '</div></li>');
+	     print = print.concat('<li><div><button onclick="changeStatus(' + array[i].id + ')" ></button> ' +
+       array[i]._item + ' - ' + printStatus(array[i]) + '</div></li>');
 	  }
 	  return '<ul>' + print + '</ul>';
-	};
+	}
+
+  function printStatus(array) {
+    return array._complete ? 'completed' : 'not completed';
+  }
 
 	exports.printItems = printItems;
 
 })(this);
-
-

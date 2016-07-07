@@ -1,15 +1,24 @@
-'use strict';
-
 (function(exports) {
 
 	var List = function()  {
 	  this.list = [];
 	};
 
-	List.prototype.addItem = function(item, itemConstructor = Item){
-	  this.list.push(createItem(item, itemConstructor));
-	  return this.list;
-	};
+  	List.prototype = {
+      addItem: function(item, itemConstructor){
+  	  this.list.push(createItem(item, itemConstructor));
+  	  return this.list;
+  	},
+      getItemById: function(itemId) {
+      console.log(itemId);
+
+      var lookup = {};
+      for (var i = 0; i < this.list.length; i++) {
+        lookup[this.list[i].id] = array[i];
+      }
+    }
+
+  };
 
 	// Helpers //
 
@@ -20,4 +29,3 @@
 	exports.List = List;
 
 })(this);
-
