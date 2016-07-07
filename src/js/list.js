@@ -10,12 +10,11 @@
   	  return this.list;
   	},
       getItemById: function(itemId) {
-      console.log(itemId);
-
       var lookup = {};
       for (var i = 0; i < this.list.length; i++) {
-        lookup[this.list[i].id] = array[i];
+        lookup[this.list[i].id] = this.list[i];
       }
+      return lookup[itemId];
     }
 
   };

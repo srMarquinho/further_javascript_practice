@@ -14,6 +14,7 @@ var list = new List();
 	}
 
 function changeStatus(itemId){
-  console.log(itemId);
-  list.getItemById(itemId);
+  var item = list.getItemById(itemId);
+  item.changeStatus();
+  updateList();
 }
