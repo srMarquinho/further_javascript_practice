@@ -6,7 +6,7 @@ function pageReady() {
     todo.add(document.getElementById('text').value);
 
     var view = { list: todo.list() };
-    var output = Mustache.render("<ul>{{#list}}<li>{{.}}</li>{{/list}}</ul>", view);
+    var output = Mustache.render("<ul>{{#list}}<li>{{.}}<button type='submit' id='submit'>Complete</button></li>{{/list}}</ul>", view);
     document.getElementById('list').innerHTML = output;
   };
 }

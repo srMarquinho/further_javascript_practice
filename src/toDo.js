@@ -1,7 +1,7 @@
 (function(exports) {
 
   function toDo() {
-    this._complete = true;
+    this._complete = false;
     this._list = [];
   }
 
@@ -11,13 +11,19 @@
       return this._list;
     },
 
-    complete: function() {
-      return true;
+    complete: function(todo) {
+      for (var i = 0; i < this._list.length; i++)
+        {
+          if(this._list[i][0] === todo)
+          {
+            this._list[i][1] = true;
+          }
+        }
     },
 
     add: function(todo) {
-      this._list.push([todo, false]);
-    },
+      this._list.push([todo, this._complete]);
+    }
   };
 
   exports.toDo = toDo;
