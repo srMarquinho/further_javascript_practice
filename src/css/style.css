@@ -1,0 +1,46 @@
+body {
+  font-family: 'Indie Flower', cursive;
+  background: url(../img/postit.jpg) center top;
+  color: #fff;
+}
+
+.wrapper {
+  margin:109px auto;
+  width: 500px;
+  text-align: center;
+}
+
+.wrapper ul {
+  text-align: left;
+  margin-left: 100px;
+  margin-top: 3px;
+}
+
+.wrapper li {
+  list-style: none;
+  padding-bottom: 4px;
+}
+
+button {
+    display: inline;
+    vertical-align: middle;
+    border:none;
+    background:none;
+}
+
+.fa-plus-circle {
+  color: blue;
+}
+
+.fa-beer {
+    color: green;
+}
+
+.fa-clock-o {
+    color: red;
+}
+
+p {
+    display: inline;
+    vertical-align: middle;
+}
