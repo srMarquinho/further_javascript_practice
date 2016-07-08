@@ -2,22 +2,22 @@
 
   var idCounter = 0;
 
-	var Item = function(item)  {
-	  this._item = item;
-	  this._complete = false;
+	var Item = function(item) {
+	  this.text = item;
+	  this.completed = false;
     this.id = idCounter++;
 	};
 
 	Item.prototype.get = function() {
-  	return this._item;
+  	return this.text;
 	};
 
 	Item.prototype.status = function() {
-  	return this._complete;
+  	return this.completed;
 	};
 
 	Item.prototype.changeStatus = function() {
-		return this._complete = !this._complete;
+		return this.completed = !this.completed;
 	};
 
 	exports.Item = Item;

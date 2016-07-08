@@ -10,25 +10,12 @@
     <link rel="stylesheet" href="/src/css/style.css" media="screen">
 
     <script src='/src/js/item.js' type='text/javascript'></script>
-		<script src='/src/js/list.js' type='text/javascript'></script>
-		<script src='/src/js/printer.js' type='text/javascript'></script>
+    <script src='/src/js/printer.js' type='text/javascript'></script>
+    <script src='/src/js/list.js' type='text/javascript'></script>
+    <script src='/src/js/api.js' type='text/javascript'></script>
   </head>
 
   <body>
-
-    <script type="text/javascript">
-      var xhr = new XMLHttpRequest();
-      xhr.open('GET', encodeURI('http://quiet-beach-24792.herokuapp.com/todos.json'));
-      xhr.onload = function() {
-        if (xhr.status === 200) {
-          alert(JSON.parse(xhr.response)[0].text);
-        }
-          else {
-            alert('Request failed.  Returned status of ' + xhr.status);
-          }
-        };
-        xhr.send();
-    </script>
 
     <div class="wrapper">
 
