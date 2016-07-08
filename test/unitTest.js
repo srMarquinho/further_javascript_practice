@@ -2,25 +2,28 @@ var expect = require('chai').expect;
 var Task = require('../src/task').Task;
 var List = require('../src/list').List;
 
-describe('Task', function() {
-  task = new Task();
-
-  xit('#_name', function() {
-    expect(task.complete()).to.be.a('boolean');
-  });
-
-  xit('#.complete()', function() {
-    task.add('Eat Breakfast');
-    task.complete('Eat Breakfast,false');
-    expect(task.list()[0][1]).to.equal(true);
-  });
-});
+//INCOMPLETE:
+// Needs module injection and stubs
 
 describe('List', function() {
   var list = new List();
 
-  it('#.add()', function() {
+  xit('adds task and taks has name', function() {
     list.add('Eat Breakfast');
     expect(list._list[0]._taskName).to.equal('Eat Breakfast');
   });
+
+  xit('adds task and task is incomplete by default', function() {
+    list.add('Eat Breakfast');
+    expect(list._list[0]._complete).to.equal(false);
+  });
+
+describe('Task', function() {
+  var task = new Task('Eat Breakfast');
+
+  it('changes itself incomplete to complete', function() {
+    task.complete();
+    expect(task._complete).to.equal(true);
+  });
+});
 });

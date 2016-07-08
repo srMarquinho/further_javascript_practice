@@ -1,5 +1,3 @@
-var Task = require('../src/task').Task;
-
 (function(exports) {
 
   function List() {

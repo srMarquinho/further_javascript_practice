@@ -10,7 +10,7 @@ describe('contact page', function() {
     browser.visit('/', done);
   });
 
-  xit('has a index page', function() {
+  it('has a index page', function() {
     browser.assert.status(200);
   });
 
