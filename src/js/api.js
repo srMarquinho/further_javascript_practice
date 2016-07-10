@@ -11,16 +11,9 @@ xmlhttp.open("GET", url, true);
 xmlhttp.send();
 ////////////////////////////////////
 
-
 var addApi = function(response) {
     var arr = JSON.parse(response);
     for (var i = 0; i < arr.length; i++) {
-        list.addItem(arr[i].text, Item);
-
-        // if(arr[i].completed === true) {
-        //   console.log(list.getItemById(arr[i].id));
-        //   console.log(arr[i].id + " " + arr[i].text);
-        // }
-
+        list.addItem(arr[i].text, arr[i].completed, Item);
     }
 };

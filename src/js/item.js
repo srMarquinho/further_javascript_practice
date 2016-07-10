@@ -2,9 +2,9 @@
 
     var idCounter = 0;
 
-    var Item = function(item) {
+    var Item = function(item, completed) {
         this.text = item;
-        this.completed = false;
+        this.completed = completed === true ? true : false;
         this.id = idCounter++;
     };
 
