@@ -4,21 +4,25 @@ body {
   color: #4d4d4d;
 }
 
+.form1 {
+  margin: -30px auto;
+}
+
 .wrapper {
-  margin:109px auto;
-  width: 500px;
+  margin:80px auto;
+  width: 1000px;
   text-align: center;
 }
 
 .wrapper ul {
   text-align: left;
-  margin-left: 100px;
-  margin-top: 3px;
+  margin-left: 64px;
+  margin-top: 30px;
 }
 
 .wrapper li {
   list-style: none;
-  padding-bottom: 4px;
+  padding-bottom: 1.4px;
 }
 
 button {
