@@ -1,7 +1,7 @@
 body {
   font-family: 'Indie Flower', cursive;
   background: url(../img/postit.jpg) center top;
-  color: #fff;
+  color: #4d4d4d;
 }
 
 .wrapper {
@@ -29,7 +29,7 @@ button {
 }
 
 .fa-plus-circle {
-  color: blue;
+  color: #4d4d4d;
 }
 
 .fa-beer {

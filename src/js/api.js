@@ -9,6 +9,7 @@ xmlhttp.onreadystatechange = function() {
 };
 xmlhttp.open("GET", url, true);
 xmlhttp.send();
+xmlhttp.setTimeout = 40000;
 ////////////////////////////////////
 
 var addApi = function(response) {
