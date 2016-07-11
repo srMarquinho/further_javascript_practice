@@ -1,8 +1,8 @@
 var list = new List();
 
-var updateList = function() {
+function updateList() {
     document.getElementById('list-printed').innerHTML = printItems(list.list);
-};
+}
 
 document.getElementById('submit').addEventListener('click', addTask, false);
 
