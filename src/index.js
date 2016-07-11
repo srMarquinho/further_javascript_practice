@@ -19,4 +19,5 @@ function changeStatus(itemId) {
     updateList();
 }
 
-window.onload = updateList;
+
+window.onload = apiRequest;
